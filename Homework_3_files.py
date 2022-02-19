@@ -22,8 +22,7 @@ def file_sorted():
             for line in f:
                 count += 1
         dictionary[f.name] = count
-    sortes = sorted(dictionary.items(), key=lambda x: x[1])
-    files_names = dict(sortes)
+    files_names = dict(sorted(dictionary.items(), key=lambda x: x[1]))
     return files_names
 
 def write_file():
